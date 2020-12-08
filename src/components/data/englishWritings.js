@@ -39,7 +39,7 @@ export const englishWritings = [
 		"genre": "english",
 		"title": "Nights",
 		"content": "Why are nights so peaceful? All your hard work or struggle you did suddenly vanishes out in the dark. Even in the crowd of thousands of people, my body becomes numb and starts losing my calm. Though i am afraid of looking at the sky, gazing the stars still gives me goosebumps. And these goosebumps are not because of the fear, it's because of the immense peace i feel inside me. Everything i have ever gone through suddenly starts running through my mind and that mature person inside me starts thinking like a child. The blood flow starts increasing and loud noises around me starts murmuring. In that very moment i start losing myself and i close my eyes and loudly but steadily the voice inside me dies. Starting my day again with the bright light, it all ends up with my so called peaceful night.",
-		"url": "https://images.pexels.com/photos/821718/pexels-photo-821718.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+		"url": "https://images.pexels.com/photos/34107/milky-way-stars-night-sky.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 	},
 	{
 		"id": 7,
