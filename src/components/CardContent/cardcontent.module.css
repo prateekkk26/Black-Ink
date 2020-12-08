@@ -46,7 +46,9 @@
 	line-height: 2rem;
 	font-weight: 400;
 	color: var(--mainWhite);
-	max-width: 60rem;
+	max-width: 70rem;
+	text-align: justify;
+	text-indent: 2rem;
 }
 
 @media screen and (max-width: 950px) {
@@ -68,8 +70,6 @@
 	}
 	.cover .content p {
 		max-width: 100%;
-		text-align: justify;
-		text-indent: 2rem;
 	}
 }
 
@@ -95,5 +95,9 @@
 	.cover .content h2 {
 		font-size: 1rem;
 		padding: 1rem;
+		max-width: 100%;
+	}
+	.cover .content p {
+		font-size: 0.9rem;
 	}
 }
