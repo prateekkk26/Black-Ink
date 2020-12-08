@@ -1,0 +1,157 @@
+.container {
+	width: 100%;
+	background-color: var(--mainWhite);
+	color: var(--mainBlack);
+	height: 5.5rem;
+	padding: 0.5rem;
+}
+
+.cover {
+	max-width: 114rem;
+	margin: 0 auto;
+}
+
+.brand {
+	float: left;
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin-top: 0.4rem;
+	text-decoration: none;
+	color: var(--mainBlack);
+	transition: color 0.4s;
+	padding: 0.5rem 0;
+}
+
+.brand:hover {
+	color: var(--mainRed);
+}
+
+.cover ul {
+	float: right;
+	list-style-type: none;
+	margin-top: 0.7rem;
+}
+
+.cover li {
+	display: inline-block;
+	margin-right: 2.5rem;
+	margin-top: 0.5rem;
+}
+
+.cover .toggle {
+	display: none;
+}
+
+.cover .toggle:hover {
+	cursor: pointer;
+}
+
+.cover li:last-child {
+	margin-right: 0;
+}
+
+.cover li a,
+.cover li Link {
+	text-decoration: none;
+	color: var(--mainBlack);
+	font-size: 1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	border: 1px solid var(--mainRed);
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	transition: color 0.5s, background-color 0.5s;
+}
+
+.cover li a:hover,
+.cover li Link:hover {
+	background-color: var(--mainRed);
+	color: var(--mainWhite);
+}
+
+.block {
+	width: 100%;
+	background-color: var(--mainWhite);
+}
+
+.blockList {
+	margin: 0 auto;
+	text-align: center;
+	list-style-type: none;
+	font-size: 1.5rem;
+	padding: 1rem;
+}
+
+.blockList a,
+.blockList Link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--mainRed);
+	border: 1px solid var(--mainRed);
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+}
+
+.blockLink {
+	padding: 1.5rem;
+}
+
+
+.blockLink a:hover,
+.blockLink a:active {
+	background-color: var(--mainRed);
+	color: var(--mainWhite);
+}
+
+@media screen and (max-width: 1199px) {
+	.cover {
+		margin: 0 3rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.cover {
+		margin: 0 3rem;
+	}
+	.cover ul {
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 722px) {
+	.cover {
+		margin: 0.5rem 3rem;
+	}
+	.cover li a,
+	.cover li Link {
+		font-size: 0.8rem;
+	}
+	.brand {
+		font-size: 1.7rem;
+		margin: 0.4rem 3rem 0 3rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.cover {
+		margin: 0.5rem 3rem;
+	}
+	.cover ul .navLink {
+		display: none;
+	}
+	.cover .toggle {
+		display: inline-block;
+		font-size: 3rem;
+		top: 50%;
+		left: 50%;
+		transform: translate(50%, -20%);
+	}
+	.brand {
+		font-size: 1.4rem;
+		margin: 1rem 0 0 0;
+	}
+}
+
+@media screen and (max-width: 350px) {
+
+}

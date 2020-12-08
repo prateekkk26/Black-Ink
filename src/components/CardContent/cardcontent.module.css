@@ -1,0 +1,99 @@
+.container {
+	padding: 5rem;
+}
+
+.cover {
+	display: flex;
+	flex-direction: row;
+	max-width: 114rem;
+	margin: 0 auto;
+	border: 1px solid var(--mainRed);
+	padding: 5rem;
+	box-shadow: 0 0 7px var(--mainRed);
+}
+
+.cover img {
+	width: 33rem;
+	height: 33rem;
+	filter: grayscale(100%);
+	border-radius: 50%;
+	box-shadow: 0 0 7px var(--mainWhite);
+}
+
+.cover .content {
+	margin-left: 3rem;
+}
+
+.cover .content h2 {
+	color: var(--mainRed);
+	border: 1px solid var(--mainRed);
+	display: inline-block;
+	padding: 1.5rem;
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+	transition: color 0.5s, background-color 0.5s;
+	text-transform: uppercase;
+}
+
+.cover .content h2:hover {
+	color: var(--mainWhite);
+	background-color: var(--mainRed);
+}
+
+.cover .content p {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 400;
+	color: var(--mainWhite);
+	max-width: 60rem;
+}
+
+@media screen and (max-width: 950px) {
+	.cover {
+		flex-direction: column;
+	}
+	.cover img {
+		width: 30rem;
+		height: 30rem;
+		margin: 0 auto;
+	}
+	.cover .content {
+		margin-left: 0;
+	}
+	.cover .content h2 {
+		margin: 3rem auto;
+		text-align: center;
+		display: block;
+	}
+	.cover .content p {
+		max-width: 100%;
+		text-align: justify;
+		text-indent: 2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.cover img {
+		width: 20rem;
+		height: 20rem;
+	}
+	.cover .content h2 {
+		font-size: 1.5rem;
+		padding: 1.2rem;
+	}
+	.cover .content p {
+		font-size: 1.1rem;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.cover img {
+		width: 10rem;
+		height: 10rem;
+	}
+	.cover .content h2 {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+}

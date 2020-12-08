@@ -1,0 +1,48 @@
+.container {
+	padding: 10rem;
+}
+
+.cover {
+	max-width: 114rem;
+	text-align: center;
+	padding: 3rem;
+	color: var(--mainWhite);
+	box-shadow: 0 0 7px var(--mainRed);
+}
+
+.cover h1 {
+	font-size: 13rem;
+	margin-bottom: 3rem;
+}
+
+.cover h3 {
+	font-size: 8rem;
+	text-transform: uppercase;
+}
+
+@media screen and (max-width: 920px) {
+	.cover h1 {
+		font-size: 10rem;
+	}
+	.cover h3 {
+		font-size: 4rem;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.cover h1 {
+		font-size: 7rem;
+	}
+	.cover h3 {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.cover h1 {
+		font-size: 3rem;
+	}
+	.cover h3 {
+		font-size: 1.5rem;
+	}
+}

@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import React from 'react'
+import {Redirect, BrowserRouter, Switch, Route} from 'react-router-dom'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Homepage from './components/Homepage/Homepage'
+import CardContent from './components/CardContent/CardContent'
+import error from './components/error/error'
+import {englishWritings} from './components/data/englishWritings'
+import {hindiWritings} from './components/data/hindiWritings'
+
+const App = () => {
+	const renderPosts = (routerProps) => {
+		let postId = parseInt(routerProps.match.params.postId)
+		let genre = routerProps.match.params.genre
+		if (genre === 'english') {
+			let post = englishWritings.find(postObj => postObj.id === postId)
+			return ( post ? <CardContent post={post} /> : <error />)
+		} else {
+			let post = hindiWritings.find(postObj => postObj.id === postId)
+			return ( post ? <CardContent post={post} /> : <error />)
+		}
+	}
+
+	return (
+		<div>
+			<BrowserRouter>
+				<Switch>
+					<Route exact path="/" component={Homepage} />
+			    	<Route exact path="/:genre/:postId" render={renderPosts} />
+			    	<Route path="/404" component={error} />
+	            	<Redirect to="/404" />
+				</Switch>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
