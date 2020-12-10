@@ -153,6 +153,9 @@
 }
 
 @media screen and (max-width: 380px) {
+	.cover {
+		margin: 0 1rem;
+	}
 	.blockList {
 		font-size: 1rem;
 	}

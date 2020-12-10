@@ -49,6 +49,8 @@
 	max-width: 70rem;
 	text-align: justify;
 	text-indent: 2rem;
+	word-spacing: 0;
+	letter-spacing: 0;
 }
 
 @media screen and (max-width: 950px) {

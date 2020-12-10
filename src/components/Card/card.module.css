@@ -6,6 +6,7 @@
 	margin-right: 3rem;
 	box-shadow: 0 0 8px var(--mainWhite);
 	background-color: var(--mainBlack);
+	border-radius: 0.5rem;
 }
 
 .cover img{
@@ -72,5 +73,7 @@
 	}
 	.container .readBtn {
 		font-size: 1.2rem;
+		/*color: var(--mainWhite);
+		background-color: var(--mainRed);*/
 	}
 }

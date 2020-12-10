@@ -42,6 +42,7 @@
 	border: 1px solid var(--mainRed);
 	transition: background-color 0.5s;
 	font-weight: 500;
+	border-radius: 0.5rem;
 }
 
 .cover .left h4:hover {
@@ -96,6 +97,8 @@
 	.cover .left h4 {
 		font-size: 1.3rem;
 		padding: 1.4rem;
+		color: var(--mainWhite);
+		background-color: var(--mainRed);
 	}
 	.cover .right {
 		height: 20rem;

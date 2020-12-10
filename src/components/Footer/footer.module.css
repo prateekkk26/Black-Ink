@@ -12,7 +12,7 @@ footer {
 	text-align: center;
 	padding: 1.5rem;
 	background-color: var(--mainBlack);
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	box-shadow: 0 0 7px var(--mainBlack);
 	display: flex;
 	flex-direction: column;
@@ -59,10 +59,11 @@ footer {
 	font-size: 1.5rem;
 	padding: 1rem;
 	font-weight: 500;
-	border: 1px solid var(--mainRed);
-	color: var(--mainRed);
 	margin: 2rem auto;
 	transition: color 0.5s, background-color 0.5s;
+	border-radius: 0.5rem;
+	color: var(--mainWhite);
+	background-color: var(--mainRed);
 }
 
 .container .create:hover {
