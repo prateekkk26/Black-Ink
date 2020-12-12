@@ -4,7 +4,7 @@
 	position: relative;
 	margin-bottom: 4rem;
 	margin-right: 3rem;
-	box-shadow: 0 0 8px var(--mainWhite);
+	box-shadow: 0 0 5px var(--mainWhite);
 	background-color: var(--mainBlack);
 	border-radius: 0.5rem;
 }

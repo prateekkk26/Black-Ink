@@ -43,10 +43,12 @@
 	transition: background-color 0.5s;
 	font-weight: 500;
 	border-radius: 0.5rem;
+	color: var(--mainRed);
 }
 
 .cover .left h4:hover {
 	background-color: var(--mainRed);
+	color: var(--mainWhite);
 }
 
 .cover p {
@@ -113,7 +115,13 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
+	.cover .left h4 {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 700px) {
 	.cover .left h1 {
 		font-size: 2rem;
 	}
@@ -121,7 +129,7 @@
 		font-size: 1.2rem;
 	}
 	.cover .left h4 {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		padding: 1.2rem;
 	}
 	.cover .right {

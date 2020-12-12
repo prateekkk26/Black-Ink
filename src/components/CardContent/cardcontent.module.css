@@ -7,17 +7,18 @@
 	flex-direction: row;
 	max-width: 114rem;
 	margin: 0 auto;
-	border: 1px solid var(--mainRed);
 	padding: 5rem;
-	box-shadow: 0 0 7px var(--mainRed);
+	border-radius: 0.5rem;
+	background-color: rgba(255,36,0,0.6);
+	opacity: 0.8;
 }
 
 .cover img {
-	width: 33rem;
-	height: 33rem;
+	width: 31rem;
+	height: 31rem;
 	filter: grayscale(100%);
 	border-radius: 50%;
-	box-shadow: 0 0 7px var(--mainWhite);
+	box-shadow: 0.2rem 0.3rem 9px var(--mainBlack);
 }
 
 .cover .content {
@@ -25,20 +26,23 @@
 }
 
 .cover .content h2 {
-	color: var(--mainRed);
-	border: 1px solid var(--mainRed);
+	color: var(--mainBlack);
 	display: inline-block;
 	padding: 1.5rem;
 	font-size: 2rem;
-	font-weight: 500;
+	font-weight: 140%;
 	margin-bottom: 2rem;
 	transition: color 0.5s, background-color 0.5s;
 	text-transform: uppercase;
+	background-color: rgba(255,255,255,0.9);
+	opacity: 0.9;
+	border-radius: 0.5rem;
+	text-shadow: 0 0 6px var(--mainBlack);
 }
 
 .cover .content h2:hover {
 	color: var(--mainWhite);
-	background-color: var(--mainRed);
+	background-color: var(--mainBlack);
 }
 
 .cover .content p {
@@ -58,8 +62,8 @@
 		flex-direction: column;
 	}
 	.cover img {
-		width: 30rem;
-		height: 30rem;
+		width: 27rem;
+		height: 27rem;
 		margin: 0 auto;
 	}
 	.cover .content {
@@ -75,7 +79,7 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 	.cover img {
 		width: 20rem;
 		height: 20rem;
