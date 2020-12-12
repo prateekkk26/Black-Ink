@@ -1,6 +1,6 @@
 :root {
 	--mainBlack: rgb(0,0,0);
-	--mainRed: rgb(255,36,0);
+	--mainRed: rgba(255,36,0,0.6);
 	--mainWhite: rgb(255,255,255);
 }
 
